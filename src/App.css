@@ -1,0 +1,1116 @@
+/* Note 
+ * style files are originally written in scss
+ * comments starts with hash (#) indicate components
+ * e.g. /* # graphical component * /
+ */
+/* remove all the default margin and padding on each element */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  background-color: #f5f2e3;
+  background-image: linear-gradient(315deg, #f5f2e3 0%, #f6f0ea 90%);
+  /* make the gradient background colour stretch on the whole page */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* remove all the default margin and padding on each element */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  background-color: #f5f2e3;
+  background-image: linear-gradient(315deg, #f5f2e3 0%, #f6f0ea 90%);
+  /* make the gradient background colour stretch on the whole page */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  width: 100vw;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f6f0ea;
+  opacity: 0.8;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  /* # text component - aligning title with flexbox */
+  /* animate the title when hovering the element */
+  /* # text component - navbar */
+}
+
+header .header-title {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: calc(2rem + 1.8vw);
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+header .header-title a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-title a .header-title-1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #2b3073;
+  font-size: 0.9rem;
+  line-height: 11px;
+  padding-right: 3px;
+}
+
+header .header-title a .header-title-2 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  color: #fd025e;
+  font-size: 1.5rem;
+  padding-left: 3px;
+}
+
+header .header-title:hover .header-title-1 {
+  -webkit-animation: rotateTitle 1s 1;
+          animation: rotateTitle 1s 1;
+}
+
+header .header-title:active .header-title-1 {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+@-webkit-keyframes rotateTitle {
+  0% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  25% {
+    -webkit-transform: scale(1.2) rotate(5deg);
+            transform: scale(1.2) rotate(5deg);
+  }
+  50% {
+    -webkit-transform: scale(1.2) rotate(-5deg);
+            transform: scale(1.2) rotate(-5deg);
+  }
+  75% {
+    -webkit-transform: scale(1.2) rotate(3deg);
+            transform: scale(1.2) rotate(3deg);
+  }
+  100% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+}
+
+@keyframes rotateTitle {
+  0% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  25% {
+    -webkit-transform: scale(1.2) rotate(5deg);
+            transform: scale(1.2) rotate(5deg);
+  }
+  50% {
+    -webkit-transform: scale(1.2) rotate(-5deg);
+            transform: scale(1.2) rotate(-5deg);
+  }
+  75% {
+    -webkit-transform: scale(1.2) rotate(3deg);
+            transform: scale(1.2) rotate(3deg);
+  }
+  100% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+}
+
+header .navbar {
+  width: 100vw;
+  margin-bottom: 1rem;
+}
+
+header .navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header .navbar ul li {
+  display: inline-block;
+  border-right: 0.2rem solid #00e75e;
+  /* remove the last border-right */
+}
+
+header .navbar ul li:nth-child(4) {
+  border-right: none;
+}
+
+header .navbar ul li a {
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  color: #2b3073;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+header .navbar ul li a:hover,
+header .navbar ul li a:active {
+  border-bottom: 3px solid #fd025e;
+}
+
+.main-section {
+  margin: 150px 0 2rem;
+  width: 100%;
+  text-align: justify;
+}
+
+.main-section .page-title {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: calc(2rem + 1.8vw);
+  color: #00e75e;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+@media screen and (max-height: 320px) {
+  header .header-title {
+    /* give more space for main when the height is less than 320px */
+    padding: 0.3rem;
+    margin-top: 0;
+  }
+}
+
+body {
+  margin-bottom: 4rem;
+}
+
+/* # text component - icons displaying at the bottom of each page */
+#footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 0;
+}
+
+#footer ul li {
+  list-style-type: none;
+}
+
+#footer ul li:nth-child(4) {
+  display: none;
+}
+
+.social {
+  padding: 0.5rem;
+}
+
+.social .fab {
+  font-size: 1.2rem;
+  color: #00e75e;
+}
+
+/* remove all the default margin and padding on each element */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  background-color: #f5f2e3;
+  background-image: linear-gradient(315deg, #f5f2e3 0%, #f6f0ea 90%);
+  /* make the gradient background colour stretch on the whole page */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* # text component - unusual homepage title layout */
+.container {
+  width: 70vw;
+  height: 77vh;
+  margin: 10vh auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2], 0.5fr;
+      grid-template-columns: repeat(2, 1fr), 0.5fr;
+  -ms-grid-rows: 1fr 1fr 0.5fr 1fr;
+      grid-template-rows: 1fr 1fr 0.5fr 1fr;
+      grid-template-areas: 'title title title'
+ '. . vertical'
+ 'footer . vertical'
+ 'navbar . vertical';
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 10px;
+}
+
+.title-main {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: calc(2rem + 1.8vw);
+  text-align: end;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: title;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  color: #2b3073;
+  /* apply responsibe font-size */
+  /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
+  font-size: calc(1.2rem + 0.5vw);
+}
+
+.title-vertical {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: calc(2rem + 1.8vw);
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
+  grid-area: vertical;
+  color: #fd025e;
+  font-size: calc(1.5rem + 1vw);
+}
+
+/* animate a part of the title */
+.exp {
+  -webkit-animation: changeColor 5s infinite;
+          animation: changeColor 5s infinite;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+@-webkit-keyframes changeColor {
+  33% {
+    color: #00e75e;
+  }
+  66% {
+    color: #ffd900;
+  }
+}
+
+@keyframes changeColor {
+  33% {
+    color: #00e75e;
+  }
+  66% {
+    color: #ffd900;
+  }
+}
+
+.side-text {
+  visibility: hidden;
+}
+
+.navigation {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: navbar;
+  margin-top: 1rem;
+}
+
+.navigation ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navigation ul li {
+  display: inline-block;
+  width: 100%;
+  border-bottom: 5px solid #2b3073;
+  padding: 2px 0;
+  margin: 2px 0;
+}
+
+.navigation ul li a {
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  color: #2b3073;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 0.7rem;
+  border-bottom: 10px solid #fd025e;
+  font-family: "Noto Sans", sans-serif;
+  color: #2b3073;
+}
+
+/* tablet screen size */
+@media screen and (min-width: 601px) {
+  .container {
+    width: 500px;
+    height: 65vh;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: 1fr 0.5fr 0.5fr 2fr 1fr;
+        grid-template-rows: 1fr 0.5fr 0.5fr 2fr 1fr;
+        grid-template-areas: 'title title .'
+ '. vertical .'
+ '. vertical side'
+ '. vertical .'
+ 'navbar footer footer';
+  }
+  .title-vertical {
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: calc(2rem + 1.8vw);
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 2;
+    grid-area: vertical;
+    color: #fd025e;
+    font-size: calc(1.7rem + 0.5vw);
+  }
+  .side-text {
+    visibility: visible;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: "Ubuntu", sans-serif;
+    text-transform: uppercase;
+    color: #2b3073;
+    font-weight: 600;
+    font-size: 1rem;
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    grid-area: side;
+    border-bottom: 5px solid #2b3073;
+    border-top: 5px solid #2b3073;
+  }
+  .footer {
+    border-bottom: 1rem solid #fd025e;
+    font-size: 0.8rem;
+  }
+}
+
+/* desktop screen size */
+@media screen and (min-width: 900px) {
+  .container {
+    -webkit-transform: rotate(315deg);
+            transform: rotate(315deg);
+  }
+}
+
+.about-content {
+  width: 80vw;
+  margin: 0 auto;
+  font-family: "Noto Sans", sans-serif;
+  color: #2b3073;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.about-content p {
+  margin: 1rem 0;
+  /* hide a paragraph including additional content in mobile view */
+}
+
+.about-content p:nth-child(3) {
+  display: none;
+}
+
+.about-content .text-point {
+  color: #fd025e;
+  font-weight: bold;
+}
+
+.about-content .line-through {
+  text-decoration: line-through;
+}
+
+.about-content .big {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.about-content a {
+  color: #2b3073;
+}
+
+.tech-skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tech-skills p {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.tech-skills .as-is {
+  padding-left: 1rem;
+}
+
+.tech-skills .as-is ul li {
+  /* "list-style-type: decimal" doesn't work on Chrome and Safari on my iPad. So it is safe to implement the same styling in an alternative way at the moment. 
+        &:nth-child(n) {
+          list-style-type: '\1F33F';
+        }
+
+        &:nth-child(n + 3) {
+          list-style-type: '\1F331';
+        } */
+  /* alternative way to apply the list-style-type: decimal
+        1) adds list-style-type: none;
+        2) adds emojis in the HTML file
+        */
+  list-style-type: none;
+}
+
+.tech-skills .to-be {
+  padding-left: 1rem;
+}
+
+.tech-skills .to-be ul li {
+  /* "list-style-type: decimal" doesn't work on Chrome and Safari on my iPad. So it is safe to implement the same styling in an alternative way at the moment. 
+        &:nth-child(1) {
+          list-style-type: '\1F349';
+        }
+        &:nth-child(2) {
+          list-style-type: '\1F348';
+        }
+        &:nth-child(3) {
+          list-style-type: '\1F34E';
+        }
+        &:nth-child(4) {
+          list-style-type: '\1F34C';
+        }
+        &:nth-child(5) {
+          list-style-type: '\1F353';
+        }
+        &:nth-child(6) {
+          list-style-type: '\1F34A';
+        }
+        &:nth-child(7) {
+          list-style-type: '\1F352';
+        } */
+  /* alternative way to apply the list-style-type: decimal
+        1) adds list-style-type: none;
+        2) adds emojis in the HTML file
+        */
+  list-style-type: none;
+}
+
+/* # text component - contact form */
+.contact-form {
+  width: 100%;
+}
+
+.contact-form hr {
+  width: 40%;
+  border: 0.6px solid #2b3073;
+  margin: 1rem 0;
+}
+
+.contact-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-form form label {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #2b3073;
+  font-size: 0.8rem;
+}
+
+.contact-form form input[type='text'],
+.contact-form form input[type='email'],
+.contact-form form textarea {
+  padding: 0.2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #2b3073;
+  border-radius: 2px;
+  margin: 0.2rem 0 0.5rem;
+  resize: vertical;
+}
+
+.contact-form form input[type='submit'] {
+  width: 70px;
+  height: 30px;
+  border-radius: 2px;
+  border: 1px solid #2b3073;
+  background-color: transparent;
+  color: #2b3073;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.contact-form form input[type='submit']:hover, .contact-form form input[type='submit']:active {
+  border: none;
+  background-color: #00e75e;
+  border-radius: 2px;
+}
+
+/* set the maximum width of the <hr>, <input>, and <textarea> */
+@media screen and (min-width: 451px) {
+  .tech-skills {
+    width: 350px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contact-form hr {
+    width: 180px;
+  }
+  .contact-form form input[type='text'],
+  .contact-form form input[type='email'],
+  .contact-form form textarea {
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .about-content {
+    width: 700px;
+    height: auto;
+    margin: 0 auto;
+  }
+  .about-content p {
+    /* display a paragraph including additional content */
+  }
+  .about-content p:nth-child(3) {
+    display: unset;
+  }
+}
+
+/* # graphical component - grid and flexbox to display the previous projects */
+.project-container {
+  width: 80vw;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  /* minmax(250px, 1fr) is the best fit to the mobile, expecially iphone 5/se */
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  gap: 3rem 1.5rem;
+  /* make the box fit to the grid templates */
+  justify-items: center;
+}
+
+.project-container .project-box {
+  width: 90%;
+  /* set the minimum height so the box can be flexible depending on the inside text */
+  min-height: 35vh;
+  /* don't forget to add box-sizing: border-box!!!! (in most cases) */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0.8rem 0.8rem 2rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  /* # graphical component - the github link and external link icons */
+  /* apply three different colors in rotation */
+}
+
+.project-container .project-box .project-box__link {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project-container .project-box .project-box__link a {
+  text-decoration: none;
+  color: #2b3073;
+}
+
+.project-container .project-box .project-box__link a i {
+  font-size: 1.1rem;
+  padding: 0.2rem;
+}
+
+.project-container .project-box .project-box__content {
+  color: #2b3073;
+  text-align: left;
+  width: 100%;
+}
+
+.project-container .project-box .project-box__content .project-heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.project-container .project-box .project-box__content .project-tech {
+  font-family: "Noto Sans", sans-serif;
+  padding: 1rem 0 0;
+}
+
+.project-container .project-box:nth-child(3n + 1) {
+  background-color: #00e75e;
+}
+
+.project-container .project-box:nth-child(3n + 2) {
+  background-color: #ffd900;
+}
+
+.project-container .project-box:nth-child(3n) {
+  background-color: #fd025e;
+}
+
+@media screen and (min-width: 1500px) {
+  .project-container {
+    width: 1200px;
+  }
+}
+
+/* remove all the default margin and padding on each element */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  background-color: #f5f2e3;
+  background-image: linear-gradient(315deg, #f5f2e3 0%, #f6f0ea 90%);
+  /* make the gradient background colour stretch on the whole page */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* # graphical component - the grid and flexbox to display the list of blog articles */
+.blog-container {
+  width: 80vw;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(250px, 1fr);
+      grid-template-columns: minmax(250px, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  gap: 1.5rem;
+  justify-items: center;
+  /* # graphical component - a list of blog posts displaying titles, dates, and images */
+}
+
+.blog-container .blog-box {
+  width: 100%;
+  height: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  /* block a click event for unlinked blog pages */
+}
+
+.blog-container .blog-box .blog-box__link {
+  text-decoration: none;
+  /* to apply the 'justify-content: space-between', height should be set */
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* display a title and keyword on the top and at the bottom respectively */
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: #2b3073;
+  /* hide some content in mobile view */
+}
+
+.blog-container .blog-box .blog-box__link .hidden {
+  display: none;
+}
+
+.blog-container .blog-box .blog-box__link .blog-title {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1rem;
+  padding-right: 0.5rem;
+  text-align: left;
+}
+
+.blog-container .blog-box .blog-box__link p {
+  font-family: "Noto Sans", sans-serif;
+  color: #a4a4a5;
+  font-size: 0.7rem;
+}
+
+.blog-container .blog-box .disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+.blog-container .blog-box .post-img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blog-container hr {
+  border: 1px solid #00e75e;
+  width: 100%;
+}
+
+@media screen and (min-width: 551px) {
+  .blog-container .blog-box .blog-box__link .blog-title {
+    font-size: 1.3rem;
+  }
+  .blog-container .blog-box .post-img {
+    width: 150px;
+    height: 100px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 735px) {
+  .blog-container .blog-box .blog-box__link {
+    /* display the content hidden in mobile view */
+  }
+  .blog-container .blog-box .blog-box__link .hidden {
+    display: unset;
+  }
+  .blog-container .blog-box .blog-box__link .blog-title {
+    font-size: 1.6rem;
+  }
+  .blog-container .blog-box .post-img {
+    width: 200px;
+    height: 135px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .blog-container {
+    width: 800px;
+  }
+}
+
+/* # graphical component - grid and flexbox to display the projects */
+.lab-container {
+  width: 80vw;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  /* minmax(250px, 1fr) is the best fit to the mobile, expecially iphone 5/se */
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  gap: 3rem 1.5rem;
+  /* make the box fit to the grid templates */
+  justify-items: center;
+}
+
+.lab-container .lab-box {
+  width: 90%;
+  /* set the minimum height so the box can be flexible depending on the inside text */
+  min-height: 35vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0.8rem 0.8rem 2rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  /* # graphical component - the github link and external link icons */
+  /* apply three different colors in rotation */
+}
+
+.lab-container .lab-box .lab-box__link {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lab-container .lab-box .lab-box__link a {
+  text-decoration: none;
+  color: #2b3073;
+}
+
+.lab-container .lab-box .lab-box__link i {
+  font-size: 1.1rem;
+  padding: 0.2rem;
+}
+
+.lab-container .lab-box .disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+.lab-container .lab-box .lab-box__content {
+  color: #2b3073;
+  text-align: left;
+  width: 100%;
+}
+
+.lab-container .lab-box .lab-box__content .lab-heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.lab-container .lab-box .lab-box__content .lab-tech {
+  font-family: "Noto Sans", sans-serif;
+  padding: 1rem 0 0;
+}
+
+.lab-container .lab-box:nth-child(3n + 1) {
+  background-color: #ffd900;
+}
+
+.lab-container .lab-box:nth-child(3n + 2) {
+  background-color: #fd025e;
+}
+
+.lab-container .lab-box:nth-child(3n) {
+  background-color: #00e75e;
+}
+
+@media screen and (min-width: 1500px) {
+  .lab-container {
+    width: 1200px;
+  }
+}
+
+/* remove all the default margin and padding on each element */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  background-color: #f5f2e3;
+  background-image: linear-gradient(315deg, #f5f2e3 0%, #f6f0ea 90%);
+  /* make the gradient background colour stretch on the whole page */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.post-container {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+/* # text component - published date and a headline */
+.post-title p {
+  font-family: "Noto Sans", sans-serif;
+  color: #a4a4a5;
+  font-size: 0.7rem;
+  padding-top: 2.5rem;
+}
+
+.post-title h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.7rem;
+  color: #2b3073;
+  text-align: left;
+  padding-bottom: 1.5rem;
+  text-align: left;
+}
+
+/* # graphical component - main image and caption */
+figure,
+.blog-image {
+  padding-bottom: 1.5rem;
+}
+
+figure img,
+.blog-image img {
+  width: 100%;
+}
+
+figure figcaption,
+.blog-image figcaption {
+  text-align: center;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.8rem;
+}
+
+/* # text component - headings and paragraphs */
+.post-main .post-headings {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.2rem;
+  color: #2b3073;
+  text-align: left;
+  padding-bottom: 1.5rem;
+  text-align: left;
+}
+
+.post-main p {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1rem;
+  color: #2b3073;
+  text-align: left;
+  padding-bottom: 1.5rem;
+  text-align: left;
+}
+
+@media screen and (min-width: 601px) {
+  .post-title h1 {
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .post-container {
+    width: 700px;
+  }
+  .post-title h1 {
+    font-size: 3rem;
+  }
+  /* # graphical component - image and caption that changes the layout */
+  .blog-image {
+    width: 400px;
+    /* place the text in the right side of the image */
+    float: left;
+    position: relative;
+    left: -50px;
+    top: 5px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
