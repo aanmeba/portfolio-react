@@ -10,12 +10,12 @@ const Navigation = ({ className }) => {
         <li>
           <NavLink to="./projects">projects</NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink to="./lab">lab</NavLink>
         </li>
         <li>
           <NavLink to="./blog">blog</NavLink>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
