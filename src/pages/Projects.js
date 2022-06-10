@@ -1,5 +1,5 @@
 import HelmetConfig from "../components/HelmetConfig";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const projectList = require("../data/projectdetails.json");
 console.log(projectList[0].title);
