@@ -1,13 +1,33 @@
 import HelmetConfig from "../components/HelmetConfig";
+import { Link } from "react-router-dom";
+
+const projectList = require("../data/projectdetails.json");
+console.log(projectList[0].title);
+
+// const { id, title, description, github, deployed_link, other_link, language } =
+//   projectList;
 
 const Projects = () => {
   return (
     <main className="main-section">
       <HelmetConfig pageLocation="Projects" />
-      <h1 className="page-title">portfolio</h1>
+      <h1 className="page-title">Projects</h1>
 
       <section className="project-container">
-        <div className="project-box">
+        {projectList.map((proj) => (
+          <div className="project-box">
+            <div className="project-box__link">
+              <a href={proj.github} target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-github"></i>
+              </a>
+            </div>
+            <div className="project-box__content">
+              <h3 className="project-heading">{proj.title}</h3>
+              <h5 className="project-tech">{proj.language[0]}</h5>
+            </div>
+          </div>
+        ))}
+        {/* <div className="project-box">
           <div className="project-box__link">
             <a
               href="https://github.com/aanmeba/udacity-travel-app"
@@ -130,7 +150,7 @@ const Projects = () => {
             <h3 className="project-heading">Personal Blog</h3>
             <h5 className="project-tech">HTML/CSS</h5>
           </div>
-        </div>
+        </div> */}
       </section>
     </main>
   );
