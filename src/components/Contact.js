@@ -12,7 +12,11 @@ const Contact = () => {
         {contactDetail.map((item) => (
           <li key={item.id}>
             <a
-              href={item.link}
+              href={
+                item.name === "Resume"
+                  ? `${process.env.PUBLIC_URL}/file/JungahAhn-resume.pdf`
+                  : item.link
+              }
               target="_blank"
               rel="noopener noreferrer"
               style={{ textDecoration: "none" }}

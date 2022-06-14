@@ -21,6 +21,6 @@
     "id": "4",
     "name": "Resume",
     "icon": "faGfaFileithub",
-    "link": "{process.env.PUBLIC_URL + '/file/JungahAhn-resume.pdf'}"
+    "link": "{${process.env.PUBLIC_URL}/file/JungahAhn-resume.pdf}"
   }
 ]
