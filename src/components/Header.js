@@ -6,12 +6,12 @@ const Header = () => {
     <header>
       <section className="header-title">
         <NavLink exact to="/">
-          <p className="header-title-1">
+          {/* <p className="header-title-1">
             Experimental
             <br />
             playground
-          </p>
-          <p className="header-title-2">Jungah</p>
+          </p> */}
+          {/* <p className="header-title-2">Jungah</p> */}
         </NavLink>
       </section>
       <Navigation className="navbar" />
