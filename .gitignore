@@ -24,8 +24,4 @@ yarn-error.log*
 
 reference.md
 
-# src/components
-Footer.js
-
-# src/pages
-About.js
+/hidden_components
