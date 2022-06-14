@@ -1,22 +1,39 @@
-import { NavLink } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { NavLink, useLocation } from "react-router-dom";
+import { Navbar, Highlighter } from "./StyledComponents";
 
 const Navigation = ({ className }) => {
+  const location = useLocation();
+  const [userLocation, setUserLocation] = useState("");
+  useEffect(() => {
+    checkLocation();
+  }, [location]);
+
+  const checkLocation = () => {
+    setUserLocation(location);
+  };
+
   return (
     <nav className={className}>
-      <ul>
-        <li>
-          <NavLink to="./about">about</NavLink>
-        </li>
-        <li>
-          <NavLink to="./projects">projects</NavLink>
-        </li>
-        {/* <li>
-          <NavLink to="./lab">lab</NavLink>
-        </li>
-        <li>
-          <NavLink to="./blog">blog</NavLink>
-        </li> */}
-      </ul>
+      <Navbar>
+        {userLocation.pathname === "/" ? (
+          <NavLink
+            to="/projects"
+            onClick={checkLocation}
+            style={{ textDecoration: "none" }}
+          >
+            <Highlighter>Projects</Highlighter>
+          </NavLink>
+        ) : (
+          <NavLink
+            to="/"
+            onClick={checkLocation}
+            style={{ textDecoration: "none" }}
+          >
+            <Highlighter>Home</Highlighter>
+          </NavLink>
+        )}
+      </Navbar>
     </nav>
   );
 };
