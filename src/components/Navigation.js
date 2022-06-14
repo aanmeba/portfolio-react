@@ -5,13 +5,15 @@ import { Navbar, Highlighter } from "./StyledComponents";
 const Navigation = ({ className }) => {
   const location = useLocation();
   const [userLocation, setUserLocation] = useState("");
-  useEffect(() => {
-    checkLocation();
-  }, [location]);
 
   const checkLocation = () => {
     setUserLocation(location);
   };
+
+  useEffect(() => {
+    // checkLocation();
+    setUserLocation(location);
+  }, [location]);
 
   return (
     <nav className={className}>
