@@ -5,12 +5,12 @@
     "github": "https://github.com/aanmeba/movie-curation",
     "deployed_link": "https://aanmeba.github.io/movie-curation/",
     "other_link": "",
-    "description": "",
+    "description": "A movie curation app created with React using The Movie DB API",
     "date": "",
-    "language": [
-      "React.js"
+    "tech_stack": [
+      "React.js", "MUI"
     ],
-    "image": ""
+    "image": "/img_movie.png"
   },
   {
     "id": "7",
@@ -18,12 +18,12 @@
     "github": "https://github.com/aanmeba/bitcoin-tracker",
     "deployed_link": "https://aanmeba.github.io/bitcoin-tracker/",
     "other_link": "",
-    "description": "",
-    "date": "",
-    "language": [
+    "description": "A bitcoin tracker built in React using the basic template, fetching Coindexk API and showing 30 days of data using the Chart.js Package.",
+    "date": "2022-05",
+    "tech_stack": [
       "React.js"
     ],
-    "image": ""
+    "image": "/img_bitcoin.png"
   },
   {
     "id": "6",
@@ -31,12 +31,12 @@
     "github": "https://github.com/aanmeba/iFund",
     "deployed_link": "https://ifund-app.herokuapp.com/",
     "other_link": "https://www.canva.com/design/DAE68FaJ34k/J06kXeZDUdJ3g-dRZULKEQ/view?utm_content=DAE68FaJ34k&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
-    "description": "",
-    "date": "",
-    "language": [
-      "Ruby on Rails"
+    "description": "A two-sided crowdfunding website in which users can CRUD and donate funding projects",
+    "date": "2022-03",
+    "tech_stack": [
+      "Ruby on Rails", "PostgreSQL", "Bootstrap", "Heroku"
     ],
-    "image": ""
+    "image": "/img_ifund.png"
   },
   {
     "id": "5",
@@ -44,25 +44,25 @@
     "github": "https://github.com/aanmeba/hackathon",
     "deployed_link": "",
     "other_link": "",
-    "description": "",
-    "date": "",
-    "language": [
-      "JavaScript"
+    "description": "Built during a hackathon, this app uses the tasty API to find and display  7 recipes randomly or depending on a keyword search",
+    "date": "2022-04",
+    "tech_stack": [
+      "JavaScript", "Bootstrap"
     ],
-    "image": ""
+    "image": "/img_reciepe.png"
   },
   {
     "id": "4",
     "title": "Split The Bill",
     "github": "https://github.com/aanmeba/t1a3_termianl_app",
     "deployed_link": "",
-    "other_link": "",
-    "description": "",
-    "date": "",
-    "language": [
-      "Ruby"
+    "other_link": "https://www.canva.com/design/DAEyZ5I6nrs/G_Hv7Z0hTV3Xqrfck9QiSg/view?utm_content=DAEyZ5I6nrs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+    "description": "A terminal app in which users can divide the total amount with 3 options - split randomly, split equally, and split manually",
+    "date": "2021-12",
+    "tech_stack": [
+      "Ruby", "RSpec"
     ],
-    "image": ""
+    "image": "/img_terminal.png"
   },
   {
     "id": "3",
@@ -70,12 +70,12 @@
     "github": "https://github.com/aanmeba/udacity-weather-app",
     "deployed_link": "https://dry-journey-77285.herokuapp.com/",
     "other_link": "",
-    "description": "",
-    "date": "",
-    "language": [
-      "JavaScript"
+    "description": "An asynchronous web app that uses Web API and user data to dynamically update the UI",
+    "date": "2021-09",
+    "tech_stack": [
+      "JavaScript", "HTML/CSS"
     ],
-    "image": ""
+    "image": "/img_weather.png"
   },
   {
     "id": "2",
@@ -83,26 +83,38 @@
     "github": "https://github.com/aanmeba/udacity-travel-app",
     "deployed_link": "",
     "other_link": "",
-    "description": "",
-    "date": "",
-    "language": [
-      "JavaScript"
+    "description": "A travel app that takes two inputs from the user, about the destination and travel date, to make asynchronous fetch calls from three APIs, GeoNames, Weatherbit, and Pixabay and return data regarding current weather and the image of the destination",
+    "date": "2021-09",
+    "tech_stack": [
+      "JavaScript", "HTML/CSS", "Webpack"
     ],
-    "image": ""
+    "image": "/img_travel.png"
   },
   {
     "id": "1",
-    "title": "Portfolio Website (Old)",
+    "title": "Portfolio Website",
     "github": "https://github.com/aanmeba/Portfolio-Website",
-    "deployed_link": "https://jungah.netlify.app/",
+    "deployed_link": "https://aanmeba.github.io/Portfolio-Website/index.html",
     "other_link": "https://www.canva.com/design/DAEvfMedIKc/97JJqBHgXkhcd7xUR-lQcg/view?utm_content=DAEvfMedIKc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
-    "description": "",
-    "date": "",
-    "language": [
-      "HTML",
-      "CSS"
+    "description": "A portfolio website created with html and css",
+    "date": "2021-11",
+    "tech_stack": [
+      "HTML/CSS", "SCSS"
     ],
-    "image": ""
+    "image": "/img_portfolio.png"
+  },
+  {
+    "id": "",
+    "title": "Simon Game",
+    "github": "https://github.com/aanmeba/udemy-simon-game",
+    "deployed_link": "https://aanmeba.github.io/udemy-simon-game/",
+    "other_link": "",
+    "description": "A simon game created with vanilla JavaScript and provided resources",
+    "date": "2021-09",
+    "tech_stack": [
+      "JavaScript"
+    ],
+    "image": "/img_simon.png"
   },
   {
     "id": "",
@@ -112,7 +124,7 @@
     "other_link": "",
     "description": "",
     "date": "",
-    "language": [
+    "tech_stack": [
       ""
     ],
     "image": ""
