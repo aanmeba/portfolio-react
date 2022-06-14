@@ -1,24 +1,24 @@
 import Home from "./pages/Home";
-import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import About from "./pages/About";
 import Projects from "./pages/Projects";
+import { AppContainer } from "./components/StyledComponents";
+import Navigation from "./components/Navigation";
 
 const App = () => {
   return (
-    <div>
+    <AppContainer>
       <Router>
-        <Header />
+        {/* <Header /> */}
+        <Navigation />
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route exact path={`${process.env.PUBLIC_URL}/`} element={<Home />} />
+          <Route
+            path={`${process.env.PUBLIC_URL}/projects`}
+            element={<Projects />}
+          />
         </Routes>
-        <Footer />
       </Router>
-    </div>
+    </AppContainer>
   );
 };
 
