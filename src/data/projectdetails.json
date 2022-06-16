@@ -6,7 +6,7 @@
     "deployed_link": "https://aanmeba.github.io/momentum-like-toDoList/",
     "other_link": "",
     "description": "Momentum-like to do list and clock app created by vanilla JavaScript",
-    "date": "",
+    "date": "2022-06",
     "tech_stack": [
       "JavaScript", "HTML/CSS"
     ],
@@ -19,7 +19,7 @@
     "deployed_link": "https://aanmeba.github.io/movie-curation/",
     "other_link": "",
     "description": "A movie curation app created with React using The Movie DB API",
-    "date": "",
+    "date": "2022-06",
     "tech_stack": [
       "React.js", "MUI"
     ],
