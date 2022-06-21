@@ -21,7 +21,8 @@ const Projects = () => {
           proj.title === "" ? null : (
             <CardBox key={proj.id}>
               <img
-                src={process.env.PUBLIC_URL + "/img" + proj.image}
+                key={proj.image}
+                src={require(`../img/${proj.image}.png`)}
                 alt={proj.title}
                 width="100%"
               />
