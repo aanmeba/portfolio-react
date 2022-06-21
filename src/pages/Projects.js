@@ -9,6 +9,7 @@ import {
   HeadingFour,
   CardText,
 } from "../components/StyledComponents";
+import LazyLoad from "react-lazyload";
 
 const projectList = require("../data/projectdetails.json");
 
@@ -20,12 +21,14 @@ const Projects = () => {
         {projectList.map((proj) =>
           proj.title === "" ? null : (
             <CardBox key={proj.id}>
-              <img
-                key={proj.image}
-                src={require(`../img/${proj.image}.png`)}
-                alt={proj.title}
-                width="100%"
-              />
+              <LazyLoad height={"100%"}>
+                <img
+                  key={proj.image}
+                  src={require(`../img/${proj.image}.png`)}
+                  alt={proj.title}
+                  width="100%"
+                />
+              </LazyLoad>
               <CardText>
                 <HeadingFour>{proj.title}</HeadingFour>
                 <UlWrapper key={proj.github}>
