@@ -10,7 +10,7 @@
     "tech_stack": [
       "JavaScript", "HTML/CSS"
     ],
-    "image": "/img_todos.png"
+    "image": "img_todos"
   },
   {
     "id": "8",
@@ -23,7 +23,7 @@
     "tech_stack": [
       "React.js", "MUI"
     ],
-    "image": "/img_movie.png"
+    "image": "img_movie"
   },
   {
     "id": "7",
@@ -36,7 +36,7 @@
     "tech_stack": [
       "React.js"
     ],
-    "image": "/img_bitcoin.png"
+    "image": "img_bitcoin"
   },
   {
     "id": "6",
@@ -49,7 +49,7 @@
     "tech_stack": [
       "Ruby on Rails", "PostgreSQL", "Bootstrap", "Heroku"
     ],
-    "image": "/img_ifund.png"
+    "image": "img_ifund"
   },
   {
     "id": "5",
@@ -62,7 +62,7 @@
     "tech_stack": [
       "JavaScript", "Bootstrap"
     ],
-    "image": "/img_reciepe.png"
+    "image": "img_reciepe"
   },
   {
     "id": "4",
@@ -75,7 +75,7 @@
     "tech_stack": [
       "Ruby", "RSpec"
     ],
-    "image": "/img_terminal.png"
+    "image": "img_terminal"
   },
   {
     "id": "3",
@@ -88,7 +88,7 @@
     "tech_stack": [
       "JavaScript", "HTML/CSS"
     ],
-    "image": "/img_weather.png"
+    "image": "img_weather"
   },
   {
     "id": "2",
@@ -101,7 +101,7 @@
     "tech_stack": [
       "JavaScript", "HTML/CSS", "Webpack"
     ],
-    "image": "/img_travel.png"
+    "image": "img_travel"
   },
   {
     "id": "1",
@@ -114,7 +114,7 @@
     "tech_stack": [
       "HTML/CSS", "SCSS"
     ],
-    "image": "/img_portfolio.png"
+    "image": "img_portfolio"
   },
   {
     "id": "",
@@ -127,7 +127,7 @@
     "tech_stack": [
       "JavaScript"
     ],
-    "image": "/img_simon.png"
+    "image": "img_simon"
   },
   {
     "id": "",
