@@ -50,18 +50,20 @@ export const Navbar = styled.div`
 export const Highlighter = styled.span`
   border-bottom: 7px solid ${highlighter};
 `;
-export const FooterContainer = styled.div`
+
+export const FlexUl = styled.ul`
   display: flex;
   list-style: none;
+  padding: 0;
 `;
 
 export const IconEl = styled.div`
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   width: auto;
   justify-content: flex-start;
-  padding: 0.2rem;
+  padding-right: 0.5rem;
   color: ${darkNavy};
 `;
 

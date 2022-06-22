@@ -1,4 +1,4 @@
-import { FooterContainer, IconEl, PaddingRight } from "./StyledComponents";
+import { FlexUl, IconEl, PaddingRight } from "./StyledComponents";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFile, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
@@ -9,7 +9,7 @@ const contactDetail = require("../data/contact.json");
 const Contact = () => {
   return (
     <section>
-      <FooterContainer>
+      <FlexUl>
         {contactDetail.map((item) => (
           <li key={item.id}>
             <a
@@ -38,7 +38,7 @@ const Contact = () => {
             </a>
           </li>
         ))}
-      </FooterContainer>
+      </FlexUl>
     </section>
   );
 };
