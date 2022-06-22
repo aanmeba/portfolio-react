@@ -1,6 +1,5 @@
 import React from "react";
 import HelmetConfig from "../components/HelmetConfig";
-// import Navigation from "../components/Navigation";
 import {
   Heading,
   MainContainer,
@@ -8,6 +7,7 @@ import {
   ExtraHeading,
 } from "../components/StyledComponents";
 import Contact from "../components/Contact";
+import TechStack from "../components/TechStack";
 
 const Home = () => {
   return (
@@ -20,6 +20,7 @@ const Home = () => {
         building React.js websites and Ruby on Rails web applications, based on
         Sydney, Australia.
       </Heading>
+      <TechStack />
       <Contact />
     </MainContainer>
   );
