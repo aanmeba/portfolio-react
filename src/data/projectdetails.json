@@ -1,5 +1,18 @@
 [
   {
+    "id": "10",
+    "title": "Simple Memo App",
+    "github": "https://github.com/aanmeba/simple-memo-client",
+    "deployed_link": "",
+    "other_link": "https://github.com/aanmeba/simple-memo-server",
+    "description": "A full stack memo app using MERN stack",
+    "date": "2022-06",
+    "tech_stack": [
+      "MongoDB Atlas", "Express", "React", "Node", "JavaScript", "HTML/CSS"
+    ],
+    "image": "img_simple"
+  },
+  {
     "id": "9",
     "title": "Momentum-like To Do List",
     "github": "https://github.com/aanmeba/momentum-like-toDoList",
