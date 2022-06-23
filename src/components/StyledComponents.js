@@ -55,6 +55,7 @@ export const FlexUl = styled.ul`
   display: flex;
   list-style: none;
   padding: 0;
+  flex-wrap: wrap;
 `;
 
 export const IconEl = styled.div`
@@ -111,6 +112,7 @@ export const Ul = styled.div`
   list-style: none;
   padding: 0;
   align-items: center;
+  flex-wrap: wrap;
 `;
 
 export const Li = styled.p`

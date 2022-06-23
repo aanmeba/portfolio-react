@@ -48,25 +48,45 @@ const Projects = () => {
                       </>
                     )}
                     <Li>
-                      <a
-                        href={proj.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Github
-                      </a>
+                      {proj.id === "10" ? (
+                        <a
+                          href={proj.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Github-Client
+                        </a>
+                      ) : (
+                        <a
+                          href={proj.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Github
+                        </a>
+                      )}
                     </Li>
                     {proj.other_link === "" ? null : (
                       <>
                         <Li>|</Li>
                         <Li>
-                          <a
-                            href={proj.other_link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            Slideshow
-                          </a>
+                          {proj.id === "10" ? (
+                            <a
+                              href={proj.other_link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              Github-Server
+                            </a>
+                          ) : (
+                            <a
+                              href={proj.other_link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              Slideshow
+                            </a>
+                          )}
                         </Li>
                       </>
                     )}
