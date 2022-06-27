@@ -8,7 +8,7 @@
     "description": "A full stack memo app using MERN stack",
     "date": "2022-06",
     "tech_stack": [
-      "MongoDB Atlas", "Express", "React", "Node", "JavaScript", "HTML/CSS"
+      "MongoDB Atlas", "Express", "React", "Node", "JavaScript", "HTML/CSS", "MUI"
     ],
     "image": "img_simple"
   },
@@ -34,7 +34,7 @@
     "description": "A movie curation app created with React using The Movie DB API",
     "date": "2022-06",
     "tech_stack": [
-      "React.js", "MUI"
+      "React", "Styled Components"
     ],
     "image": "img_movie"
   },
@@ -47,7 +47,7 @@
     "description": "A bitcoin tracker built in React using the basic template, fetching Coindexk API and showing 30 days of data using the Chart.js Package.",
     "date": "2022-05",
     "tech_stack": [
-      "React.js"
+      "React", "Styled Components"
     ],
     "image": "img_bitcoin"
   },
@@ -57,7 +57,7 @@
     "github": "https://github.com/aanmeba/iFund",
     "deployed_link": "https://ifund-app.herokuapp.com/",
     "other_link": "https://www.canva.com/design/DAE68FaJ34k/J06kXeZDUdJ3g-dRZULKEQ/view?utm_content=DAE68FaJ34k&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
-    "description": "A two-sided crowdfunding website in which users can CRUD and donate funding projects",
+    "description": "A two-sided crowdfunding website in which users can CRUD and donate funding projects. Uploading and retrieving images are handled using AWS S3 by controlling the access with IAM",
     "date": "2022-03",
     "tech_stack": [
       "Ruby on Rails", "PostgreSQL", "Bootstrap", "Heroku"
@@ -83,7 +83,7 @@
     "github": "https://github.com/aanmeba/t1a3_termianl_app",
     "deployed_link": "",
     "other_link": "https://www.canva.com/design/DAEyZ5I6nrs/G_Hv7Z0hTV3Xqrfck9QiSg/view?utm_content=DAEyZ5I6nrs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
-    "description": "A terminal app in which users can divide the total amount with 3 options - split randomly, split equally, and split manually",
+    "description": "A terminal app in which users can divide the total amount with 3 options - split randomly, split equally, and split manually. Various edge cases were handled to provide the correct result, while unit tests were conducted using RSpec",
     "date": "2021-12",
     "tech_stack": [
       "Ruby", "RSpec"
@@ -92,19 +92,6 @@
   },
   {
     "id": "3",
-    "title": "Weather journal App",
-    "github": "https://github.com/aanmeba/udacity-weather-app",
-    "deployed_link": "https://dry-journey-77285.herokuapp.com/",
-    "other_link": "",
-    "description": "An asynchronous web app that uses Web API and user data to dynamically update the UI",
-    "date": "2021-09",
-    "tech_stack": [
-      "JavaScript", "HTML/CSS"
-    ],
-    "image": "img_weather"
-  },
-  {
-    "id": "2",
     "title": "Travel App",
     "github": "https://github.com/aanmeba/udacity-travel-app",
     "deployed_link": "",
@@ -117,12 +104,25 @@
     "image": "img_travel"
   },
   {
+    "id": "2",
+    "title": "Weather journal App",
+    "github": "https://github.com/aanmeba/udacity-weather-app",
+    "deployed_link": "https://dry-journey-77285.herokuapp.com/",
+    "other_link": "",
+    "description": "A weather web app that uses an API and user's data to dynamically update the UI using DOM",
+    "date": "2021-09",
+    "tech_stack": [
+      "JavaScript", "HTML/CSS"
+    ],
+    "image": "img_weather"
+  },
+  {
     "id": "1",
     "title": "Portfolio Website",
     "github": "https://github.com/aanmeba/Portfolio-Website",
     "deployed_link": "https://aanmeba.github.io/Portfolio-Website/index.html",
     "other_link": "https://www.canva.com/design/DAEvfMedIKc/97JJqBHgXkhcd7xUR-lQcg/view?utm_content=DAEvfMedIKc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
-    "description": "A portfolio website created with html and css",
+    "description": "First portfolio website in the mobile first approach built using only HTML and CSS, exploring various CSS features including Grid, Flexbox, Animation, Writing mode, Transform, Keyframes, Media query, etc",
     "date": "2021-11",
     "tech_stack": [
       "HTML/CSS", "SCSS"
