@@ -27,32 +27,6 @@
   },
   {
     "id": "8",
-    "title": "Movie Curation",
-    "github": "https://github.com/aanmeba/movie-curation",
-    "deployed_link": "https://aanmeba.github.io/movie-curation/",
-    "other_link": "",
-    "description": "A movie curation app created with React using The Movie DB API",
-    "date": "2022-06",
-    "tech_stack": [
-      "React", "Styled Components"
-    ],
-    "image": "img_movie"
-  },
-  {
-    "id": "7",
-    "title": "Bitcoin Tracker",
-    "github": "https://github.com/aanmeba/bitcoin-tracker",
-    "deployed_link": "https://aanmeba.github.io/bitcoin-tracker/",
-    "other_link": "",
-    "description": "A bitcoin tracker built in React using the basic template, fetching Coindexk API and showing 30 days of data using the Chart.js Package.",
-    "date": "2022-05",
-    "tech_stack": [
-      "React", "Styled Components"
-    ],
-    "image": "img_bitcoin"
-  },
-  {
-    "id": "6",
     "title": "iFund",
     "github": "https://github.com/aanmeba/iFund",
     "deployed_link": "https://ifund-app.herokuapp.com/",
@@ -63,6 +37,32 @@
       "Ruby on Rails", "PostgreSQL", "Bootstrap", "Heroku"
     ],
     "image": "img_ifund"
+  },
+  {
+    "id": "7",
+    "title": "Bitcoin Tracker",
+    "github": "https://github.com/aanmeba/bitcoin-tracker",
+    "deployed_link": "https://aanmeba.github.io/bitcoin-tracker/",
+    "other_link": "",
+    "description": "A bitcoin tracker built in React using the basic template, fetching Coin desk API and showing 30 days of data using the Chart.js Package.",
+    "date": "2022-05",
+    "tech_stack": [
+      "React", "Styled Components"
+    ],
+    "image": "img_bitcoin"
+  },
+  {
+    "id": "6",
+    "title": "Movie Curation",
+    "github": "https://github.com/aanmeba/movie-curation",
+    "deployed_link": "https://aanmeba.github.io/movie-curation/",
+    "other_link": "",
+    "description": "A movie curation app created with React using The Movie DB API",
+    "date": "2022-06",
+    "tech_stack": [
+      "React", "Styled Components"
+    ],
+    "image": "img_movie"
   },
   {
     "id": "5",
