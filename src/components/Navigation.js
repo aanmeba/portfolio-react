@@ -20,7 +20,7 @@ const Navigation = ({ className }) => {
       <Navbar>
         {userLocation.pathname === "/" ? (
           <NavLink
-            to="projects"
+            to="/projects"
             onClick={checkLocation}
             style={{ textDecoration: "none" }}
           >
