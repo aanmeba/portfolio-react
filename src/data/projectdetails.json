@@ -8,7 +8,7 @@
     "description": "A full stack memo app using MERN stack",
     "date": "2022-06",
     "tech_stack": [
-      "MongoDB Atlas", "Express", "React", "Node", "JavaScript", "HTML/CSS", "MUI"
+      "JavaScript", "HTML/CSS", "React", "Node", "Express", "MongoDB Atlas", "MUI"
     ],
     "image": "img_simple"
   },
@@ -47,7 +47,7 @@
     "description": "A bitcoin tracker built in React using the basic template, fetching Coin desk API and showing 30 days of data using the Chart.js Package.",
     "date": "2022-05",
     "tech_stack": [
-      "React", "Styled Components"
+      "JavaScript", "React", "Styled Components"
     ],
     "image": "img_bitcoin"
   },
@@ -60,7 +60,7 @@
     "description": "A movie curation app created with React using The Movie DB API",
     "date": "2022-06",
     "tech_stack": [
-      "React", "Styled Components"
+      "JavaScript", "React", "Styled Components"
     ],
     "image": "img_movie"
   },
