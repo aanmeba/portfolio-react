@@ -11,11 +11,8 @@ const App = () => {
         {/* <Header /> */}
         <Navigation />
         <Routes>
-          <Route exact path={`${process.env.PUBLIC_URL}/`} element={<Home />} />
-          <Route
-            path={`${process.env.PUBLIC_URL}/projects`}
-            element={<Projects />}
-          />
+          <Route exact path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
       </Router>
     </AppContainer>
