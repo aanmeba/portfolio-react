@@ -3,12 +3,12 @@
     "id": "10",
     "title": "Simple Memo App",
     "github": "https://github.com/aanmeba/simple-memo-client",
-    "deployed_link": "",
-    "other_link": "https://github.com/aanmeba/simple-memo-server",
-    "description": "A full stack memo app using MERN stack",
+    "deployed_link": "https://simple-memo.netlify.app/",
+    "other_link": "",
+    "description": "A full stack memo app using MERN stack, deployed with netlify for frontend and heroku for backend",
     "date": "2022-06",
     "tech_stack": [
-      "JavaScript", "HTML/CSS", "React", "Node", "Express", "MongoDB Atlas", "MUI"
+      "JavaScript", "HTML/CSS", "React", "Node", "Express", "MongoDB Atlas", "MUI", "Heroku", "Netlify"
     ],
     "image": "img_simple"
   },
