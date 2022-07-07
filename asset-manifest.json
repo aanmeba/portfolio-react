@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/portfolio-react/static/js/main.a3a8592e.js",
+    "static/media/img_todos.png": "/portfolio-react/static/media/img_todos.bfddf416f8c52a7275ed.png",
+    "static/media/img_reciepe.png": "/portfolio-react/static/media/img_reciepe.e319038e357cd5e9dac5.png",
+    "static/media/img_movie.png": "/portfolio-react/static/media/img_movie.9fd6c15012cdd9cf42d8.png",
+    "static/media/img_travel.png": "/portfolio-react/static/media/img_travel.bbb2601290cb8ad4f7b4.png",
+    "static/media/img_ifund.png": "/portfolio-react/static/media/img_ifund.de0fa00fea10a1ba8207.png",
+    "static/media/img_simple.png": "/portfolio-react/static/media/img_simple.d71f013a7b5fcef41507.png",
+    "static/media/img_portfolio.png": "/portfolio-react/static/media/img_portfolio.3ea2eb38403cc7f32056.png",
+    "static/media/img_bitcoin.png": "/portfolio-react/static/media/img_bitcoin.2054569525df87f4d667.png",
+    "static/media/img_simon.png": "/portfolio-react/static/media/img_simon.cd5faa255fdc6ef675b5.png",
+    "static/media/img_weather.png": "/portfolio-react/static/media/img_weather.43c1a055e68dd7aedc93.png",
+    "static/media/JungahAhn-resume.pdf": "/portfolio-react/static/media/JungahAhn-resume.2721fe6e7337f143a3aa.pdf",
+    "static/media/img_terminal.png": "/portfolio-react/static/media/img_terminal.22b4a5ae91b7bd0bbbcb.png",
+    "index.html": "/portfolio-react/index.html",
+    "main.a3a8592e.js.map": "/portfolio-react/static/js/main.a3a8592e.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.a3a8592e.js"
+  ]
+}
