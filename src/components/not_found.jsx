@@ -1,9 +1,5 @@
 import { Link } from "react-router-dom";
-import {
-  Heading,
-  MainContainer,
-  ExtraHeading,
-} from "../components/StyledComponents";
+import { Heading, MainContainer, ExtraHeading } from "./StyledComponents";
 
 const NotFound = () => {
   return (

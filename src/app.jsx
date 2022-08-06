@@ -1,9 +1,9 @@
-import Home from "./pages/Home";
+import Home from "./pages/home";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Projects from "./pages/Projects";
+import Projects from "./pages/projects";
 import { AppContainer } from "./components/StyledComponents";
-import Navigation from "./components/Navigation";
-import NotFound from "./components/NotFound";
+import Navigation from "./components/navigation";
+import NotFound from "./components/not_found";
 
 const App = () => {
   return (

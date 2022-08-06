@@ -1,4 +1,4 @@
-import HelmetConfig from "../components/HelmetConfig";
+import HelmetConfig from "../components/helmet_config";
 import {
   CardContainer,
   CardBox,

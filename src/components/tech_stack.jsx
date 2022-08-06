@@ -4,15 +4,17 @@ const TechStack = () => {
   return (
     <>
       <FlexUl>
+        <Li>JavaScript</Li>
+        <Li>|</Li>
+        <Li>React</Li>
+        <Li>|</Li>
+        <Li>Ruby on Rails</Li>
+        <Li>|</Li>
         <Li>CSS/SCSS</Li>
         <Li>|</Li>
         <Li>Bootstrap</Li>
         <Li>|</Li>
-        <Li>Ruby on Rails</Li>
-        <Li>|</Li>
-        <Li>JavaScript</Li>
-        <Li>|</Li>
-        <Li>React</Li>
+        <Li>PostCSS</Li>
         <Li>|</Li>
         <Li>Node.js</Li>
         <Li>|</Li>

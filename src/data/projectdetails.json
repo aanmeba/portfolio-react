@@ -1,5 +1,18 @@
 [
   {
+    "id": "11",
+    "title": "iLink",
+    "github": "https://github.com/teamilink",
+    "deployed_link": "https://ilinkapp.netlify.app/",
+    "other_link": "",
+    "description": "A full stack app inspired by Linktree using React.js for frontend and Rails API for backend, deployed with netlify for frontend and heroku for backend",
+    "date": "2022-06",
+    "tech_stack": [
+      "JavaScript", "React", "Ruby on Rails", "PostgreSQL", "PostCSS", "MUI", "Heroku", "Netlify"
+    ],
+    "image": "img_ilink"
+  },
+  {
     "id": "10",
     "title": "Simple Memo App",
     "github": "https://github.com/aanmeba/simple-memo-client",
