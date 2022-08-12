@@ -4,7 +4,7 @@
     "title": "iLink",
     "github": "https://github.com/teamilink",
     "deployed_link": "https://ilinkapp.netlify.app/",
-    "other_link": "",
+    "other_link": "https://www.canva.com/design/DAFIbcFDLno/EsukiCeuY-j5TS8ZnHPYrw/view?utm_content=DAFIbcFDLno&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu",
     "description": "A full stack app inspired by Linktree using React.js for frontend and Rails API for backend, deployed with netlify for frontend and heroku for backend",
     "date": "2022-06",
     "tech_stack": [
