@@ -1,5 +1,5 @@
 import React from "react";
-import RunningStack from "./running_stack";
+import RunningRecords from "./runningRecords";
 import { Heading, Highlighter } from "./StyledComponents";
 
 const Running = () => (
@@ -9,7 +9,7 @@ const Running = () => (
       <Highlighter>running and trail running</Highlighter>. You can see me
       running (almost) every Saturday at Rhodes Parkrun 🏃🏻‍♀️
     </Heading>
-    <RunningStack />
+    <RunningRecords />
   </>
 );
 

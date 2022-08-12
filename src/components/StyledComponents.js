@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 const brightNavy = "#2b3173";
 const darkNavy = "#272c34";
@@ -49,6 +49,22 @@ export const Navbar = styled.div`
 
 export const Highlighter = styled.span`
   border-bottom: 7px solid ${highlighter};
+`;
+
+const loadingAnimation = keyframes`
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+`;
+
+export const Spinner = styled.span`
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  border: 3px solid #e8e7e6;
+  border-top: 3px solid ${highlighter};
+  animation: ${loadingAnimation} 2s linear infinite;
+  margin: 0 0.5em;
 `;
 
 export const FlexUl = styled.ul`
@@ -119,6 +135,8 @@ export const Li = styled.p`
   margin-right: 10px;
   text-align: center;
   margin: 0 10px 0 0;
+  display: flex;
+  align-items: flex-end;
 `;
 
 export const BottomMargin = styled.div`
