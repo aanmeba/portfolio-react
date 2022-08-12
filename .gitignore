@@ -27,3 +27,6 @@ reference.md
 /hidden_components
 # Local Netlify folder
 .netlify
+
+# Keys
+.env
