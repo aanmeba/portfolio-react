@@ -1,26 +1,29 @@
 import React from "react";
 import HelmetConfig from "../components/helmet_config";
 import {
-  Heading,
   MainContainer,
-  Highlighter,
   ExtraHeading,
+  DivClickable,
 } from "../components/StyledComponents";
 import Contact from "../components/contact";
-import TechStack from "../components/tech_stack";
+import About from "../components/about";
+import { useState } from "react";
+import Running from "../components/running";
 
 const Home = () => {
+  const [about, setAbout] = useState(true);
+  const handleClick = (event) => {
+    event.preventDefault();
+    setAbout(!about);
+  };
+
   return (
     <MainContainer>
       <HelmetConfig pageLocation="Home" />
       <ExtraHeading>Hello World!</ExtraHeading>
-      <Heading>
-        I'm <Highlighter>Jungah Ahn</Highlighter> who is a{" "}
-        <Highlighter>junior full-stack developer</Highlighter> with experience
-        building web apps using React.js and Ruby on Rails, based on Sydney,
-        Australia.
-      </Heading>
-      <TechStack />
+      <DivClickable onClick={handleClick}>
+        {about ? <About /> : <Running />}
+      </DivClickable>
       <Contact />
     </MainContainer>
   );

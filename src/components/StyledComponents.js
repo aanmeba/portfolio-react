@@ -124,3 +124,7 @@ export const Li = styled.p`
 export const BottomMargin = styled.div`
   margin-bottom: 5rem;
 `;
+
+export const DivClickable = styled.div`
+  cursor: pointer;
+`;
