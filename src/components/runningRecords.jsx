@@ -1,25 +1,45 @@
 import React, { useEffect, useState } from "react";
-import { getRecord } from "../service/strava";
 import { Li, FlexUl, Spinner } from "./StyledComponents";
 
-const RunningRecords = () => {
+const RunningRecords = ({ strava }) => {
   const [loading, setLoading] = useState(true);
   const [runRecord, setRunRecord] = useState({
     lastFourWeek: 0,
     thisYear: 0,
     total: 0,
   });
+  const [expires, setExpires] = useState(null);
+  const [accessToken, setAccessToken] = useState(null);
 
   useEffect(() => {
-    getRecord().then((data) => {
-      setRunRecord({
-        lastFourWeek: data.recent_run_totals.distance,
-        thisYear: data.ytd_run_totals.distance,
-        total: data.all_run_totals.distance,
+    if (expires === null || expires > Date.now()) {
+      strava
+        .getAccessToken() //
+        .then((data) => {
+          setExpires(data.expires_at);
+          setAccessToken(data.access_token);
+          return data.access_token;
+        })
+        .then((token) => strava.getRecord(token))
+        .then((data) => {
+          setRunRecord({
+            lastFourWeek: data.recent_run_totals.distance,
+            thisYear: data.ytd_run_totals.distance,
+            total: data.all_run_totals.distance,
+          });
+          setLoading(false);
+        });
+    } else {
+      strava.getRecord(accessToken).then((data) => {
+        setRunRecord({
+          lastFourWeek: data.recent_run_totals.distance,
+          thisYear: data.ytd_run_totals.distance,
+          total: data.all_run_totals.distance,
+        });
+        setLoading(false);
       });
-      setLoading(false);
-    });
-  }, []);
+    }
+  }, [accessToken, expires, strava]);
 
   return (
     <>

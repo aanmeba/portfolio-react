@@ -10,7 +10,7 @@ import About from "../components/about";
 import { useState } from "react";
 import Running from "../components/running";
 
-const Home = () => {
+const Home = ({ strava }) => {
   const [about, setAbout] = useState(true);
   const handleClick = (event) => {
     event.preventDefault();
@@ -22,7 +22,7 @@ const Home = () => {
       <HelmetConfig pageLocation="Home" />
       <ExtraHeading>Hello World!</ExtraHeading>
       <DivClickable onClick={handleClick}>
-        {about ? <About /> : <Running />}
+        {about ? <About /> : <Running strava={strava} />}
       </DivClickable>
       <Contact />
     </MainContainer>
