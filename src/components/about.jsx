@@ -7,7 +7,7 @@ const About = () => (
     <Heading>
       I'm <Highlighter>Jungah Ahn</Highlighter> who is a{" "}
       <Highlighter>junior full-stack developer</Highlighter> with experience
-      building web apps using React.js and Ruby on Rails, based on Sydney,
+      building web apps using React.js and Ruby on Rails, based in Sydney,
       Australia.
     </Heading>
     <TechStack />
