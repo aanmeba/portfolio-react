@@ -2,7 +2,7 @@ import { FlexUl, IconEl, PaddingRight } from "./StyledComponents";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFile, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-import Resume from "../file/JungahAhn-resume.pdf";
+import Resume from "../file/Jungah-Resume.pdf";
 
 const contactDetail = require("../data/contact.json");
 
