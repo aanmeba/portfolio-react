@@ -1,5 +1,18 @@
 [
   {
+    "id": "12",
+    "title": "Movie Curation - GraphQL",
+    "github": "https://github.com/movie_app_graphql",
+    "deployed_link": "",
+    "other_link": "",
+    "description": "A movie curation app using a custom-built GraphQL API, which wraps the existing REST API to retrieve the specific data that need in the app",
+    "date": "2022-09",
+    "tech_stack": [
+      "JavaScript", "React", "GraphQL", "PostCSS"
+    ],
+    "image": "img_movies"
+  },
+  {
     "id": "11",
     "title": "iLink",
     "github": "https://github.com/teamilink",
