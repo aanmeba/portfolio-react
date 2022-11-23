@@ -1,28 +1,20 @@
 import { FlexUl, Li } from "./StyledComponents";
 
 const TechStack = () => {
+  const stackList = require("../data/tech_stack.json");
   return (
     <>
       <FlexUl>
-        <Li>JavaScript</Li>
-        <Li>|</Li>
-        <Li>React</Li>
-        <Li>|</Li>
-        <Li>Ruby on Rails</Li>
-        <Li>|</Li>
-        <Li>CSS/SCSS</Li>
-        <Li>|</Li>
-        <Li>Bootstrap</Li>
-        <Li>|</Li>
-        <Li>PostCSS</Li>
-        <Li>|</Li>
-        <Li>Node.js</Li>
-        <Li>|</Li>
-        <Li>Express.js</Li>
-        <Li>|</Li>
-        <Li>PostgreSQL</Li>
-        <Li>|</Li>
-        <Li>MongoDB/Atlas</Li>
+        {stackList.map((stack, index) =>
+          index !== stackList.length - 1 ? (
+            <>
+              <Li key={index}>{stack}</Li>
+              <Li>|</Li>
+            </>
+          ) : (
+            <Li key={index}>{stack}</Li>
+          )
+        )}
       </FlexUl>
     </>
   );

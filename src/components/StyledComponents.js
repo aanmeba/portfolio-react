@@ -19,6 +19,11 @@ export const MainContainer = styled.div`
   margin-top: 5rem;
 `;
 
+export const FixedHeader = styled.nav`
+  position: sticky;
+  top: 0;
+`;
+
 export const ExtraHeading = styled.h1`
   font-size: 2.5rem;
   font-weight: 800;

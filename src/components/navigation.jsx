@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import { Navbar, Highlighter } from "./StyledComponents";
+import { Navbar, Highlighter, FixedHeader } from "./StyledComponents";
 
 const Navigation = ({ className }) => {
   const location = useLocation();
@@ -16,7 +16,7 @@ const Navigation = ({ className }) => {
   }, [location]);
 
   return (
-    <nav className={className}>
+    <FixedHeader className={className}>
       <Navbar>
         {userLocation.pathname === "/" ? (
           <NavLink
@@ -36,7 +36,7 @@ const Navigation = ({ className }) => {
           </NavLink>
         )}
       </Navbar>
-    </nav>
+    </FixedHeader>
   );
 };
 

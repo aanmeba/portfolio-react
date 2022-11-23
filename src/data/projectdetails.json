@@ -10,7 +10,8 @@
     "tech_stack": [
       "JavaScript", "React", "GraphQL", "PostCSS"
     ],
-    "image": "img_movies"
+    "image": "img_movies",
+    "category": "practice"
   },
   {
     "id": "11",
@@ -23,7 +24,8 @@
     "tech_stack": [
       "JavaScript", "React", "Ruby on Rails", "PostgreSQL", "PostCSS", "MUI", "Heroku", "Netlify"
     ],
-    "image": "img_ilink"
+    "image": "img_ilink",
+    "category": "project"
   },
   {
     "id": "10",
@@ -36,7 +38,8 @@
     "tech_stack": [
       "JavaScript", "HTML/CSS", "React", "Node", "Express", "MongoDB Atlas", "MUI", "Heroku", "Netlify"
     ],
-    "image": "img_simple"
+    "image": "img_simple",
+    "category": "project"
   },
   {
     "id": "9",
@@ -49,7 +52,8 @@
     "tech_stack": [
       "JavaScript", "HTML/CSS"
     ],
-    "image": "img_todos"
+    "image": "img_todos",
+    "category": "practice"
   },
   {
     "id": "8",
@@ -62,7 +66,8 @@
     "tech_stack": [
       "Ruby on Rails", "PostgreSQL", "Bootstrap", "Heroku"
     ],
-    "image": "img_ifund"
+    "image": "img_ifund",
+    "category": "project"
   },
   {
     "id": "7",
@@ -75,7 +80,8 @@
     "tech_stack": [
       "JavaScript", "React", "Styled Components"
     ],
-    "image": "img_bitcoin"
+    "image": "img_bitcoin",
+    "category": "practice"
   },
   {
     "id": "6",
@@ -88,7 +94,8 @@
     "tech_stack": [
       "JavaScript", "React", "Styled Components"
     ],
-    "image": "img_movie"
+    "image": "img_movie",
+    "category": "practice"
   },
   {
     "id": "5",
@@ -101,7 +108,8 @@
     "tech_stack": [
       "JavaScript", "Bootstrap"
     ],
-    "image": "img_reciepe"
+    "image": "img_reciepe",
+    "category": "project"
   },
   {
     "id": "4",
@@ -114,7 +122,8 @@
     "tech_stack": [
       "Ruby", "RSpec"
     ],
-    "image": "img_terminal"
+    "image": "img_terminal",
+    "category": "project"
   },
   {
     "id": "3",
@@ -127,7 +136,8 @@
     "tech_stack": [
       "JavaScript", "HTML/CSS", "Webpack"
     ],
-    "image": "img_travel"
+    "image": "img_travel",
+    "category": "practice"
   },
   {
     "id": "2",
@@ -140,7 +150,8 @@
     "tech_stack": [
       "JavaScript", "HTML/CSS"
     ],
-    "image": "img_weather"
+    "image": "img_weather",
+    "category": "practice"
   },
   {
     "id": "1",
@@ -153,7 +164,8 @@
     "tech_stack": [
       "HTML/CSS", "SCSS"
     ],
-    "image": "img_portfolio"
+    "image": "img_portfolio",
+    "category": "project"
   },
   {
     "id": "",
@@ -166,7 +178,8 @@
     "tech_stack": [
       "JavaScript"
     ],
-    "image": "img_simon"
+    "image": "img_simon",
+    "category": "practice"
   },
   {
     "id": "",
@@ -179,6 +192,7 @@
     "tech_stack": [
       ""
     ],
-    "image": ""
+    "image": "",
+    "category": "project"
   }
 ]
