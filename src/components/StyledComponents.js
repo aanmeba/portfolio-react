@@ -79,6 +79,13 @@ export const FlexUl = styled.ul`
   flex-wrap: wrap;
 `;
 
+export const Button = styled.button`
+  font-size: 1rem;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+`;
+
 export const IconEl = styled.div`
   display: flex;
   flex-direction: row;
