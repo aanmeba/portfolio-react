@@ -21,6 +21,7 @@ export const MainContainer = styled.div`
 
 export const FixedHeader = styled.nav`
   position: sticky;
+  width: 100%;
   top: 0;
 `;
 
@@ -52,6 +53,12 @@ export const Navbar = styled.div`
   margin-top: 2rem;
 `;
 
+export const SubNavbar = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+`;
+
 export const Highlighter = styled.span`
   border-bottom: 7px solid ${highlighter};
 `;
@@ -77,6 +84,18 @@ export const FlexUl = styled.ul`
   list-style: none;
   padding: 0;
   flex-wrap: wrap;
+`;
+
+export const Button = styled.button`
+  font-size: 1rem;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  padding: 1rem;
+
+  &:hover {
+    color: ${brightNavy};
+  }
 `;
 
 export const IconEl = styled.div`

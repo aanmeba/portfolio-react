@@ -9,7 +9,7 @@ const TechStack = () => {
           index !== stackList.length - 1 ? (
             <>
               <Li key={index}>{stack}</Li>
-              <Li>|</Li>
+              <Li key={index}>|</Li>
             </>
           ) : (
             <Li key={index}>{stack}</Li>
