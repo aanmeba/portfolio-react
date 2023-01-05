@@ -21,6 +21,7 @@ export const MainContainer = styled.div`
 
 export const FixedHeader = styled.nav`
   position: sticky;
+  width: 100%;
   top: 0;
 `;
 
@@ -50,6 +51,12 @@ export const Navbar = styled.div`
   justify-content: flex-end;
   padding: 0;
   margin-top: 2rem;
+`;
+
+export const SubNavbar = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
 `;
 
 export const Highlighter = styled.span`
@@ -84,6 +91,11 @@ export const Button = styled.button`
   border: none;
   background-color: #fff;
   cursor: pointer;
+  padding: 1rem;
+
+  &:hover {
+    color: ${brightNavy};
+  }
 `;
 
 export const IconEl = styled.div`

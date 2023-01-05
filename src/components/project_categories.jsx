@@ -1,9 +1,27 @@
 import React from "react";
-import { Button } from "./StyledComponents";
+import { Button, Highlighter, SubNavbar } from "./StyledComponents";
 
 export const ProjectCategories = ({ sorting, setSorting }) => {
   const handleClick = (e) => {
-    setSorting(e.target.textContent === "project" ? "practice" : "project");
+    const sortingToLowerCase = e.target.textContent.toLowerCase();
+    setSorting(sortingToLowerCase === "all" ? null : sortingToLowerCase);
   };
-  return <Button onClick={handleClick}>{sorting}</Button>;
+
+  const categories = ["All", "Project", "Practice"];
+
+  return (
+    <SubNavbar>
+      {categories.map((cat) => (
+        <Button key={cat} onClick={handleClick}>
+          {!sorting && cat === "All" ? (
+            <Highlighter>{cat}</Highlighter>
+          ) : cat.toLocaleLowerCase() === sorting ? (
+            <Highlighter>{cat}</Highlighter>
+          ) : (
+            <>{cat}</>
+          )}
+        </Button>
+      ))}
+    </SubNavbar>
+  );
 };

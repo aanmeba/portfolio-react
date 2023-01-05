@@ -10,11 +10,10 @@ import {
 } from "./StyledComponents";
 
 export const ProjectSorting = ({ projectList, sorting }) => {
-  const sortedProjectList = projectList.filter(
-    (proj) => proj.category === sorting
-  );
+  const sortedProjectList = !sorting
+    ? [...projectList]
+    : projectList.filter((proj) => proj.category === sorting);
 
-  console.log(sortedProjectList, "--- sortedProjectList");
   return (
     <>
       {sortedProjectList.map((proj) => (
