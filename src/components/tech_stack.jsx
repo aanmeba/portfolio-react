@@ -1,4 +1,4 @@
-import { FlexUl, Li } from "./StyledComponents";
+import { DisplayFlex, FlexUl, Li } from "./StyledComponents";
 
 const TechStack = () => {
   const stackList = require("../data/tech_stack.json");
@@ -7,10 +7,10 @@ const TechStack = () => {
       <FlexUl>
         {stackList.map((stack, index) =>
           index !== stackList.length - 1 ? (
-            <>
-              <Li key={index}>{stack}</Li>
-              <Li key={index}>|</Li>
-            </>
+            <DisplayFlex key={index}>
+              <Li>{stack}</Li>
+              <Li>|</Li>
+            </DisplayFlex>
           ) : (
             <Li key={index}>{stack}</Li>
           )

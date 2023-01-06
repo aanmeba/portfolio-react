@@ -3,6 +3,8 @@ import styled, { keyframes } from "styled-components";
 const brightNavy = "#2b3173";
 const darkNavy = "#272c34";
 const highlighter = "#00e65d";
+const tenpx = "0.6rem";
+const eightpx = "0.5rem";
 const sansFont =
   '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif';
 
@@ -60,7 +62,7 @@ export const SubNavbar = styled.div`
 `;
 
 export const Highlighter = styled.span`
-  border-bottom: 7px solid ${highlighter};
+  border-bottom: ${eightpx} solid ${highlighter};
 `;
 
 const loadingAnimation = keyframes`
@@ -104,7 +106,7 @@ export const IconEl = styled.div`
   align-items: flex-start;
   width: auto;
   justify-content: flex-start;
-  padding-right: 0.5rem;
+  padding-right: ${eightpx};
   color: ${darkNavy};
 `;
 
@@ -131,12 +133,12 @@ export const CardBox = styled.div`
   border-bottom: 7px solid ${highlighter};
   width: 350px;
   height: auto;
-  padding: 0.5rem 0.5rem 1rem;
+  padding: ${eightpx} ${eightpx} 1rem;
   box-sizing: border-box;
 `;
 
 export const CardText = styled.div`
-  padding-left: 0.5rem;
+  padding-left: ${eightpx};
 `;
 
 export const UlWrapper = styled.div`
@@ -155,10 +157,14 @@ export const Ul = styled.div`
   flex-wrap: wrap;
 `;
 
+export const DisplayFlex = styled.div`
+  display: flex;
+`;
+
 export const Li = styled.p`
-  margin-right: 10px;
+  margin-right: ${tenpx};
   text-align: center;
-  margin: 0 10px 0 0;
+  margin: 0 ${tenpx} 0 0;
   display: flex;
   align-items: flex-end;
 `;

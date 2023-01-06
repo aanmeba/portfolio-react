@@ -7,6 +7,7 @@ import {
   UlWrapper,
   Ul,
   Li,
+  DisplayFlex,
 } from "./StyledComponents";
 
 export const ProjectSorting = ({ projectList, sorting }) => {
@@ -70,17 +71,17 @@ export const ProjectSorting = ({ projectList, sorting }) => {
               </Ul>
             </UlWrapper>
             <p>{proj.description}</p>
-            <UlWrapper key={proj.tech_stack.length}>
+            <UlWrapper key={proj.id + proj.tech_stack.length}>
               <Ul>
                 {proj.tech_stack.length === 1 ? (
                   <Li>{proj.tech_stack[0]}</Li>
                 ) : (
                   proj.tech_stack.map((lang, index) =>
                     proj.tech_stack.length - 1 !== index ? (
-                      <>
-                        <Li key={index}>{lang}</Li>
-                        <Li key={index + 10}>|</Li>
-                      </>
+                      <DisplayFlex key={index}>
+                        <Li>{lang}</Li>
+                        <Li>|</Li>
+                      </DisplayFlex>
                     ) : (
                       <Li key={index}>{lang}</Li>
                     )
