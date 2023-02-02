@@ -7,7 +7,7 @@ export const ProjectCategories = ({ sorting, setSorting }) => {
     setSorting(sortingToLowerCase === "all" ? null : sortingToLowerCase);
   };
 
-  const categories = ["All", "Project", "Practice"];
+  const categories = ["All", "Project", "Practice", "Open Source"];
 
   return (
     <SubNavbar>

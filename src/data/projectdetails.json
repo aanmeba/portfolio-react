@@ -168,7 +168,7 @@
     "category": "project"
   },
   {
-    "id": "",
+    "id": "13",
     "title": "Simon Game",
     "github": "https://github.com/aanmeba/udemy-simon-game",
     "deployed_link": "https://aanmeba.github.io/udemy-simon-game/",
@@ -180,5 +180,33 @@
     ],
     "image": "img_simon",
     "category": "practice"
+  },
+  {
+    "id": "14",
+    "title": "Blog",
+    "github": "https://github.com/aanmeba/udacity-personal-blog",
+    "deployed_link": "https://aanmeba.github.io/udacity-personal-blog/",
+    "other_link": "",
+    "description": "A simple resposive blog to practice CSS Grid and Flexbox",
+    "date": "2021-09",
+    "tech_stack": [
+      "HTML/CSS"
+    ],
+    "image": "img_blog",
+    "category": "practice"
+  },
+  {
+    "id": "15",
+    "title": "Alertit",
+    "github": "https://github.com/Evil-Bees/Alertit/pull/47",
+    "deployed_link": "",
+    "other_link": "",
+    "description": "Update the Status page styling",
+    "date": "2023-01",
+    "tech_stack": [
+      "Tailwind", "React", "JavaScript", "HTML/CSS"
+    ],
+    "image": "img_alertit",
+    "category": "open source"
   }
 ]

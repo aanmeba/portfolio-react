@@ -10,10 +10,16 @@ import {
   DisplayFlex,
 } from "./StyledComponents";
 
+const newerToOlder = (array) => {
+  return array.sort((a, b) => new Date(b.date) - new Date(a.date));
+};
+
 export const ProjectSorting = ({ projectList, sorting }) => {
-  const sortedProjectList = !sorting
+  const filteredList = !sorting
     ? [...projectList]
     : projectList.filter((proj) => proj.category === sorting);
+
+  const sortedProjectList = newerToOlder(filteredList);
 
   return (
     <>
