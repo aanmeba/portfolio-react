@@ -25,6 +25,7 @@ export const FixedHeader = styled.nav`
   position: sticky;
   width: 100%;
   top: 0;
+  background-color: #ffffffb5;
 `;
 
 export const ExtraHeading = styled.h1`
