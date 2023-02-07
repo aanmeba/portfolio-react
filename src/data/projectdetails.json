@@ -2,7 +2,7 @@
   {
     "id": "12",
     "title": "Movie Curation - GraphQL",
-    "github": "https://github.com/movie_app_graphql",
+    "github": "https://github.com/aanmeba/movie_app_graphql",
     "deployed_link": "",
     "other_link": "",
     "description": "A movie curation app using a custom-built GraphQL API, which wraps the existing REST API to retrieve the specific data that need in the app",
