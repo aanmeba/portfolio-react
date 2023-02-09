@@ -11,7 +11,6 @@ const Navigation = ({ className }) => {
   };
 
   useEffect(() => {
-    // checkLocation();
     setUserLocation(location);
   }, [location]);
 
