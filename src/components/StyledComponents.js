@@ -1,8 +1,10 @@
 import styled, { keyframes } from "styled-components";
 
-const brightNavy = "#2b3173";
+// const brightNavy = "#2b3173";
+const brightNavy = "rgb(47,59,109)";
 const darkNavy = "#272c34";
-const highlighter = "#00e65d";
+// const highlighter = "#00e65d";
+const highlighter = "rgb(5,246,175)";
 const tenpx = "0.6rem";
 const eightpx = "0.5rem";
 const sansFont =
@@ -63,7 +65,26 @@ export const SubNavbar = styled.div`
 `;
 
 export const Highlighter = styled.span`
-  border-bottom: ${eightpx} solid ${highlighter};
+  & {
+    position: relative;
+  }
+
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    // bottom: -10%;
+    top: 1rem;
+    left: 0;
+    height: 60%;
+    width: 100%;
+    z-index: -1;
+    // opacity: 0.8;
+    // border-bottom: ${eightpx} solid ${highlighter};
+    // transform: scale(1.02, 1.02) skewX(-5deg);
+    transform: rotate(1.5deg);
+    background: ${highlighter};
+  }
 `;
 
 const loadingAnimation = keyframes`
