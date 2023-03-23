@@ -1,9 +1,7 @@
 import styled, { keyframes } from "styled-components";
 
-// const brightNavy = "#2b3173";
 const brightNavy = "rgb(47,59,109)";
 const darkNavy = "#272c34";
-// const highlighter = "#00e65d";
 const highlighter = "rgb(5,246,175)";
 const tenpx = "0.6rem";
 const eightpx = "0.5rem";
@@ -17,6 +15,7 @@ export const AppContainer = styled.div`
   flex-direction: column;
   font-family: ${sansFont};
   color: ${darkNavy};
+  overflow-wrap: break-word;
 `;
 
 export const MainContainer = styled.div`
@@ -84,12 +83,11 @@ export const SubNavbar = styled.div`
 `;
 
 export const Highlighter = styled.span`
-  & {
-    position: relative;
-  }
+  position: relative;
+  white-space: nowrap;
 
   &::after {
-    display: block;
+    display: inline-block;
     content: "";
     position: absolute;
     top: 1rem;
@@ -98,7 +96,7 @@ export const Highlighter = styled.span`
     width: calc(100% + 0.4rem);
     z-index: -1;
     transform: rotate(1.5deg);
-    background: ${highlighter};
+    background-color: ${highlighter};
   }
 `;
 

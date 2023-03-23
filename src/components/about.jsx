@@ -5,10 +5,11 @@ import { Heading, Highlighter } from "./StyledComponents";
 const About = () => (
   <>
     <Heading>
-      I'm <Highlighter>Jungah Ahn</Highlighter> who is a{" "}
-      <Highlighter>junior full-stack developer</Highlighter> with experience
-      building web apps using React.js and Ruby on Rails, based in Sydney,
-      Australia.
+      I'm <Highlighter>Jungah&nbsp;Ahn</Highlighter>, a{" "}
+      <Highlighter>junior&nbsp;full-stack&nbsp;developer</Highlighter> based in
+      Sydney, Australia with experience in building web applications mainly
+      using{" "}
+      <Highlighter>React.js&nbsp;and&nbsp;Ruby&nbsp;on&nbsp;Rails</Highlighter>
     </Heading>
     <TechStack />
   </>
