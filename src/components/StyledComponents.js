@@ -48,6 +48,25 @@ export const HeadingFour = styled.h4`
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 3rem;
+
+  ${(props) =>
+    props.isHovered &&
+    `
+    position: relative;
+
+    &::after {    
+      display: inline-block;
+      content: "";
+      position: absolute;
+      top: 1rem;
+      left: -0.3rem;
+      height: 60%;
+      width: 100%;
+      z-index: -1;
+      transform: rotate(-1.5deg);
+      background: ${highlighter};
+    }
+  `}
 `;
 
 export const Navbar = styled.div`
@@ -73,15 +92,11 @@ export const Highlighter = styled.span`
     display: block;
     content: "";
     position: absolute;
-    // bottom: -10%;
     top: 1rem;
-    left: 0;
+    left: -0.2rem;
     height: 60%;
-    width: 100%;
+    width: calc(100% + 0.4rem);
     z-index: -1;
-    // opacity: 0.8;
-    // border-bottom: ${eightpx} solid ${highlighter};
-    // transform: scale(1.02, 1.02) skewX(-5deg);
     transform: rotate(1.5deg);
     background: ${highlighter};
   }
@@ -113,13 +128,28 @@ export const FlexUl = styled.ul`
 export const Button = styled.button`
   font-size: 1rem;
   border: none;
-  background-color: #fff;
   cursor: pointer;
-  padding: 1rem;
+  margin: 1rem;
+  background-color: transparent;
 
-  &:hover {
-    color: ${brightNavy};
-  }
+  ${(props) =>
+    props.isHovered &&
+    `
+      position: relative;
+      
+      &::after {    
+      display: inline-block;
+      content: "";
+      position: absolute;
+      top: 0.5rem;
+      left: 0;
+      height: 60%;
+      width: 100%;
+      z-index: -1;
+      transform: rotate(-1.5deg);
+      background: ${highlighter};
+    }
+  `}
 `;
 
 export const IconEl = styled.div`
@@ -157,6 +187,7 @@ export const CardBox = styled.div`
   height: auto;
   padding: ${eightpx} ${eightpx} 1rem;
   box-sizing: border-box;
+  }
 `;
 
 export const CardText = styled.div`

@@ -1,4 +1,3 @@
-import React from "react";
 import LazyLoad from "react-lazyload";
 import {
   CardBox,
@@ -14,7 +13,12 @@ const newerToOlder = (array) => {
   return array.sort((a, b) => new Date(b.date) - new Date(a.date));
 };
 
-export const ProjectSorting = ({ projectList, sorting }) => {
+export const ProjectSorting = ({
+  projectList,
+  sorting,
+  hoveredChild,
+  handleHover,
+}) => {
   const filteredList = !sorting
     ? [...projectList]
     : projectList.filter((proj) => proj.category === sorting);
@@ -24,7 +28,11 @@ export const ProjectSorting = ({ projectList, sorting }) => {
   return (
     <>
       {sortedProjectList.map((proj) => (
-        <CardBox key={proj.id}>
+        <CardBox
+          key={proj.id}
+          onMouseEnter={() => handleHover(proj.id)}
+          onMouseLeave={() => handleHover(null)}
+        >
           <LazyLoad height={"100%"}>
             <img
               key={proj.image}
@@ -34,7 +42,9 @@ export const ProjectSorting = ({ projectList, sorting }) => {
             />
           </LazyLoad>
           <CardText>
-            <HeadingFour>{proj.title}</HeadingFour>
+            <HeadingFour isHovered={hoveredChild === proj.id}>
+              {proj.title}
+            </HeadingFour>
             <UlWrapper key={proj.github}>
               <Ul>
                 {proj.deployed_link === "" ? null : (
