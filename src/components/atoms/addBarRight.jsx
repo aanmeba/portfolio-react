@@ -1,6 +1,7 @@
 import { DisplayFlex, Li } from "../StyledComponents";
 
 const addBarRight = (list) => {
+  console.log(list, typeof list, "---");
   return (
     <>
       {list.map((item, index) =>

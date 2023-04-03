@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Li, FlexUl, Spinner } from "./StyledComponents";
 import displayRunningData from "./atoms/displayRunningData";
+import addBarRight from "./atoms/addBarRight";
 
 const RunningRecords = ({ strava }) => {
   const [loading, setLoading] = useState(true);
@@ -45,38 +46,28 @@ const RunningRecords = ({ strava }) => {
   const mappingString = ["last 4 weeks", "this year", "in total"];
 
   return (
-    <>
-      <FlexUl>
-        {loading ? (
-          <>
-            <Spinner></Spinner> Loading...
-          </>
-        ) : (
-          <>
-            {Object.keys(runRecord).map((record, index, arr) =>
-              index !== arr.length - 1 ? (
-                <React.Fragment key={record}>
-                  <Li>
-                    {displayRunningData(
-                      runRecord[record],
-                      `km ${mappingString[index]}`
-                    )}
-                  </Li>
-                  <Li>|</Li>
-                </React.Fragment>
-              ) : (
-                <Li key={record}>
-                  {displayRunningData(
-                    runRecord[record],
-                    `km ${mappingString[index]}`
-                  )}
-                </Li>
-              )
-            )}
-          </>
-        )}
-      </FlexUl>
-    </>
+    <FlexUl>
+      {loading ? (
+        <>
+          <Spinner></Spinner> Loading...
+        </>
+      ) : (
+        <>
+          {addBarRight(
+            Array.from(
+              Object.keys(runRecord).map((record, index) => {
+                const runningData = displayRunningData(
+                  runRecord[record],
+                  `km ${mappingString[index]}`
+                );
+
+                return runningData;
+              })
+            )
+          )}
+        </>
+      )}
+    </FlexUl>
   );
 };
 
