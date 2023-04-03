@@ -48,7 +48,9 @@ const RunningRecords = ({ strava }) => {
     <>
       <FlexUl>
         {loading ? (
-          <Spinner></Spinner>
+          <>
+            <Spinner></Spinner> Loading...
+          </>
         ) : (
           <>
             {Object.keys(runRecord).map((record, index, arr) =>
