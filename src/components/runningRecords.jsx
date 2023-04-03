@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Li, FlexUl, Spinner } from "./StyledComponents";
 import displayRunningData from "./atoms/displayRunningData";
-import addBarRight from "./atoms/addBarRight";
 
 const RunningRecords = ({ strava }) => {
   const [loading, setLoading] = useState(true);
