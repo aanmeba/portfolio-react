@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Projects from "./pages/projects";
 import { AppContainer } from "./components/StyledComponents";
 import Navigation from "./components/navigation";
-import NotFound from "./components/not_found";
+import NotFound from "./components/notFound";
 
 const App = ({ strava }) => {
   return (

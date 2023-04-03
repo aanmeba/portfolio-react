@@ -1,7 +1,7 @@
-import HelmetConfig from "../components/helmet_config";
+import HelmetConfig from "../components/helmetConfig";
 import { CardContainer, MainContainer } from "../components/StyledComponents";
-import { ProjectCategories } from "../components/project_categories";
-import { ProjectSorting } from "../components/project_sorting";
+import { ProjectCategories } from "../components/projectCategories";
+import { ProjectSorting } from "../components/projectSorting";
 import { useState } from "react";
 
 const projectList = require("../data/projectdetails.json");

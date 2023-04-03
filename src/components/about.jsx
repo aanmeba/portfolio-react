@@ -1,5 +1,5 @@
 import React from "react";
-import TechStack from "../components/tech_stack";
+import TechStack from "./techStack";
 import { Heading, Highlighter } from "./StyledComponents";
 
 const About = () => (

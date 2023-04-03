@@ -1,5 +1,5 @@
 import React from "react";
-import HelmetConfig from "../components/helmet_config";
+import HelmetConfig from "../components/helmetConfig";
 import {
   MainContainer,
   ExtraHeading,
