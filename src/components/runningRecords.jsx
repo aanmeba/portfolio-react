@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Li, FlexUl, Spinner } from "./StyledComponents";
+import displayRunningData from "./atoms/displayRunningData";
+import addBarRight from "./atoms/addBarRight";
 
 const RunningRecords = ({ strava }) => {
   const [loading, setLoading] = useState(true);
@@ -14,7 +16,7 @@ const RunningRecords = ({ strava }) => {
   useEffect(() => {
     if (expires === null || expires > Date.now()) {
       strava
-        .getAccessToken() //
+        .getAccessToken()
         .then((data) => {
           setExpires(data.expires_at);
           setAccessToken(data.access_token);
@@ -41,32 +43,37 @@ const RunningRecords = ({ strava }) => {
     }
   }, [accessToken, expires, strava]);
 
+  const mappingString = ["last 4 weeks", "this year", "in total"];
+
   return (
     <>
       <FlexUl>
-        <Li>
-          ✨{" "}
-          {loading ? (
-            <Spinner></Spinner>
-          ) : (
-            (runRecord.lastFourWeek / 1000).toFixed(2)
-          )}{" "}
-          km last 4 weeks
-        </Li>
-        <Li>
-          ✨{" "}
-          {loading ? (
-            <Spinner></Spinner>
-          ) : (
-            (runRecord.thisYear / 1000).toFixed(2)
-          )}{" "}
-          km this year
-        </Li>
-        <Li>
-          ✨{" "}
-          {loading ? <Spinner></Spinner> : (runRecord.total / 1000).toFixed(2)}{" "}
-          km in total
-        </Li>
+        {loading ? (
+          <Spinner></Spinner>
+        ) : (
+          <>
+            {Object.keys(runRecord).map((record, index, arr) =>
+              index !== arr.length - 1 ? (
+                <React.Fragment key={record}>
+                  <Li>
+                    {displayRunningData(
+                      runRecord[record],
+                      `km ${mappingString[index]}`
+                    )}
+                  </Li>
+                  <Li>|</Li>
+                </React.Fragment>
+              ) : (
+                <Li key={record}>
+                  {displayRunningData(
+                    runRecord[record],
+                    `km ${mappingString[index]}`
+                  )}
+                </Li>
+              )
+            )}
+          </>
+        )}
       </FlexUl>
     </>
   );
