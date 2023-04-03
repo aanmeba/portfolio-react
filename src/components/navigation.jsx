@@ -14,26 +14,19 @@ const Navigation = ({ className }) => {
     setUserLocation(location);
   }, [location]);
 
+  const linkText = userLocation.pathname === "/" ? "Projects" : "Home";
+  const linkTo = userLocation.pathname === "/" ? "/projects" : "/";
+
   return (
     <FixedHeader className={className}>
       <Navbar>
-        {userLocation.pathname === "/" ? (
-          <NavLink
-            to="/projects"
-            onClick={checkLocation}
-            style={{ textDecoration: "none" }}
-          >
-            <Highlighter>Projects</Highlighter>
-          </NavLink>
-        ) : (
-          <NavLink
-            to="/"
-            onClick={checkLocation}
-            style={{ textDecoration: "none" }}
-          >
-            <Highlighter>Home</Highlighter>
-          </NavLink>
-        )}
+        <NavLink
+          to={linkTo}
+          onClick={checkLocation}
+          style={{ textDecoration: "none" }}
+        >
+          <Highlighter>{linkText}</Highlighter>
+        </NavLink>
       </Navbar>
     </FixedHeader>
   );

@@ -7,10 +7,12 @@ import Resume from "../file/Jungah-Resume.pdf";
 const contactDetail = require("../data/contact.json");
 
 const Contact = () => {
+  const iconList = [faGithub, faLinkedinIn, faEnvelope, faFile];
+
   return (
     <section>
       <FlexUl>
-        {contactDetail.map((item) => (
+        {contactDetail.map((item, i) => (
           <li key={item.id}>
             <a
               href={item.name === "Resume" ? Resume : item.link}
@@ -20,18 +22,7 @@ const Contact = () => {
             >
               <IconEl>
                 <PaddingRight>
-                  {item.name === "Github" ? (
-                    <FontAwesomeIcon icon={faGithub} />
-                  ) : null}
-                  {item.name === "LinkedIn" ? (
-                    <FontAwesomeIcon icon={faLinkedinIn} />
-                  ) : null}
-                  {item.name === "Email" ? (
-                    <FontAwesomeIcon icon={faEnvelope} />
-                  ) : null}
-                  {item.name === "Resume" ? (
-                    <FontAwesomeIcon icon={faFile} />
-                  ) : null}
+                  <FontAwesomeIcon icon={iconList[i]} />
                 </PaddingRight>
                 <PaddingRight>{item.name}</PaddingRight>
               </IconEl>
