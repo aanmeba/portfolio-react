@@ -6,9 +6,8 @@ import {
   UlWrapper,
   Ul,
   Li,
-  DisplayFlex,
 } from "./StyledComponents";
-import addBarRight from "./atoms/addBarRight";
+import AddBarRight from "./atoms/addBarRight";
 
 const newerToOlder = (array) => {
   return array.sort((a, b) => new Date(b.date) - new Date(a.date));
@@ -81,7 +80,7 @@ export const ProjectSorting = ({
                   {proj.tech_stack.length === 1 ? (
                     <Li>{proj.tech_stack[0]}</Li>
                   ) : (
-                    addBarRight(proj.tech_stack)
+                    AddBarRight(proj.tech_stack)
                   )}
                 </Ul>
               </UlWrapper>

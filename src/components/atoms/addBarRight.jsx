@@ -1,7 +1,6 @@
 import { DisplayFlex, Li } from "../StyledComponents";
 
-const addBarRight = (list) => {
-  console.log(list, typeof list, "---");
+const AddBarRight = (list) => {
   return (
     <>
       {list.map((item, index) =>
@@ -18,4 +17,4 @@ const addBarRight = (list) => {
   );
 };
 
-export default addBarRight;
+export default AddBarRight;

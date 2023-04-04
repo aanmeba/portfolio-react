@@ -1,4 +1,4 @@
-const displayRunningData = (data, string) => {
+const DisplayRunningData = (data, string) => {
   return (
     <>
       {typeof data === "number" ? `${(data / 1000).toFixed(2)} ${string}` : ""}
@@ -6,4 +6,4 @@ const displayRunningData = (data, string) => {
   );
 };
 
-export default displayRunningData;
+export default DisplayRunningData;

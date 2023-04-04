@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { Li, FlexUl, Spinner } from "./StyledComponents";
-import displayRunningData from "./atoms/displayRunningData";
-import addBarRight from "./atoms/addBarRight";
+import { FlexUl, Spinner } from "./StyledComponents";
+import DisplayRunningData from "./atoms/displayRunningData";
+import AddBarRight from "./atoms/addBarRight";
 
 const RunningRecords = ({ strava }) => {
   const [loading, setLoading] = useState(true);
@@ -53,10 +53,10 @@ const RunningRecords = ({ strava }) => {
         </>
       ) : (
         <>
-          {addBarRight(
+          {AddBarRight(
             Array.from(
               Object.keys(runRecord).map((record, index) => {
-                const runningData = displayRunningData(
+                const runningData = DisplayRunningData(
                   runRecord[record],
                   `km ${mappingString[index]}`
                 );
